@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(53, 219, 224);
+      }
+      .penguin * {
+        position: absolute;
+      }
+      .penguin {
+        position: relative;
+        margin: auto;
+        margin-top: 5%;
+        width: 300px;
+        height: 300px;
+      }
+      .right-cheek {
+        top: 15%;
+        left: 35%;
+        width: 60%;
+        height: 70%;
+        background-color: white;
+        border-radius: 70% 70% 60%;
+      }
+      .left-cheek {
+        top: 15%;
+        left: 5%;
+        width: 60%;
+        height: 70%;
+        background-color: white;
+        border-radius: 70% 70% 60% 60%;
+      }
+      .belly {
+        top: 60%;
+        left: 2.5%;
+        background-color: white;
+        width: 95%;
+        height: 100%;
+        border-radius: 120% 120% 100% 100%;
+      }
+      .penguin-top {
+        top: 10%;
+        left: 25%;
+        background-color: black;
+        width: 50%;
+        height: 45%;
+        border-radius: 70% 70% 60% 60%;
+      }
+      .penguin-bottom {
+        top: 40%;
+        left: 23.5%;
+        background-color: black;
+        width: 53%;
+        height: 45%;
+        border-radius: 70% 70% 100% 100%;
+      }
+      .right-hand {
+        top: -23%;
+        left: -15%;
+        background-color: black;
+        width: 30%;
+        height: 60%;
+        border-radius: 30% 30% 120% 30%;
+        animation-name: hand;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes hand {
+        from {
+          transform: rotate(150deg);
+        }
+        to {
+          transform: rotate(110deg);
+        }
+      }
+      .left-hand {
+        top: 0%;
+        left: 85%;
+        background-color: black;
+        width: 30%;
+        height: 60%;
+        border-radius: 30% 30% 30% 120%;
+        transform: rotate(-45deg);
+      }
+      .left-feet {
+        top: 85%;
+        left: 60%;
+        background-color: orange;
+        width: 15%;
+        height: 30%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-80deg);
+        z-index: -1;
+      }
+      .right-feet {
+        top: 85%;
+        left: 25%;
+        background-color: orange;
+        width: 15%;
+        height: 30%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(80deg);
+        z-index: -1;
+      }
+      .right-eye {
+        top: 40%;
+        left: 65%;
+        background-color: black;
+        width: 15%;
+        height: 12%;
+        background: radial-gradient(
+          ellipse farthest-corner at 33% 100%,
+          rgb(255, 253, 253) 45%,
+          rgb(5, 5, 5) 47%
+        );
+        background-size: 150% 100%;
+        border-radius: 50% 50% 50% 50%;
+      }
+      .left-eye {
+        top: 40%;
+        left: 25%;
+        background-color: black;
+        width: 15%;
+        height: 12%;
+        background: radial-gradient(
+          ellipse farthest-corner at 33% 100%,
+          rgb(255, 253, 253) 45%,
+          rgb(5, 5, 5) 47%
+        );
+        background-size: 150% 100%;
+        border-radius: 50% 50% 50% 50%;
+      }
+      .blush-1 {
+        top: 60%;
+        left: 15%;
+        background-color: pink;
+        width: 20%;
+        height: 10%;
+        border-radius: 50% 50% 50% 50%;
+      }
+      .blush-2 {
+        top: 60%;
+        left: 65%;
+        background-color: pink;
+        width: 20%;
+        height: 10%;
+        border-radius: 50% 50% 50% 50%;
+      }
+      .beak-top {
+        top: 55%;
+        left: 40%;
+        background-color: orange;
+        width: 20%;
+        height: 10%;
+        border-radius: 50% 50% 50% 50%;
+      }
+      .beak-bottom {
+        top: 58%;
+        left: 41.7%;
+        background-color: orange;
+        width: 17%;
+        height: 10%;
+        border-radius: 0 0 70% 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="penguin">
+      <div class="penguin-bottom">
+        <div class="right-hand"></div>
+        <div class="left-hand"></div>
+        <div class="right-feet"></div>
+        <div class="left-feet"></div>
+      </div>
+      <div class="penguin-top">
+        <div class="right-cheek"></div>
+        <div class="left-cheek"></div>
+        <div class="belly"></div>
+        <div class="right-eye"></div>
+        <div class="left-eye"></div>
+        <div class="blush-1"></div>
+        <div class="blush-2"></div>
+        <div class="beak-top"></div>
+        <div class="beak-bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
